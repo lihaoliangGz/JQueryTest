@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--使用本地jq库-->
+    <!--<script type="text/javascript" src="js/vendor/jquery-1.12.0.min.js"></script>-->
+    <!--使用google的jq库-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <!--使用Microsoft的jq库-->
+    <!--<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>-->
+    <script type="text/javascript">
+        var jq=jQuery.noConflict();
+        // document ready 函数,为了防止文档在完全加载（就绪）之前运行 jQuery 代码
+        jq(document).ready(function(){
+            jq("p").click(function(){ //美元符号定义 jQuery
+                jq(this).hide();
+                //$(this).css("background-color", "red");//把当前的HTML元素的背景颜色改为红色
+
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<p>点我,将会消失</p>
+
+</body>
+</html>

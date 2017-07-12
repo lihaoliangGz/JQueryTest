@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试jq效果-隐藏/显示</title>
+    <!--使用google的jq库-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide(1000);
+            });
+            $("#show").click(function () {
+                //$("p").show("fast");
+                $("p").toggle("slow",function () {
+                    //alert("toggle()方法完成后执行的函数");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p>点击隐藏或者显示</p>
+    <button id="hide" value="隐藏">隐藏</button>
+    <button id="show" value="显示">显示</button>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置html内容和属性</title>
+    <!--使用google的jq库-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#test1").text(function (i,origText) {
+                    return "Old text: " + origText + " New text: Hello world!(index: " + i + ")";
+                });
+            });
+
+            $("#btn2").click(function () {
+                $("#test2").html("<b>Hello world!</b>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="test1">这是<b>粗体</b>文本。</p>
+    <p id="test2">这是另一段<b>粗体</b>文本。</p>
+    <button id="btn1">显示旧/新文本</button>
+    <button id="btn2">显示旧/新 HTML</button>
+</body>
+</html>
