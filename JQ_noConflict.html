@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决JavaScript框架使用简写符号冲突</title>
+    <!--使用google的jq库-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //$.noConflict();
+        jQuery(document).ready(function () {
+            jQuery("#btn").click(function () {
+                jQuery("p").text("jQuery运行中");
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+    <p>
+        p标签
+    </p>
+    <button id="btn">按钮</button>
+</html>

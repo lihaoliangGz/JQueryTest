@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的jmscroll插件</title>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"/>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/vendor/jmscroll.js"></script>
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+    <style>
+        div{
+            width:510px;
+            margin: 0 auto;
+            text-align: justify;
+            padding-top: 20px;
+        }
+        .scroll-loading {
+            text-align:center;
+        }
+        .scroll-loading img {
+            float: none;
+        }
+    </style>
+
+
+</head>
+<body>
+<script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+    <div class="content">
+        <p class="item">
+            1---Lorem ipsum dolor sit amet, at ius affert causae utroque. Semper iuvaret cum te. Utamur prompta pro no,pro ut fabellas torquatos.
+            Te viderer invenire eum, duo definiebas disputationi ad. Ut pri admodum ponderum pertinax,
+            facer minimum legendos vim id. Aeque verear reprehendunt an eam. Eos ea alia oblique, cu cum erat option.
+            Has ut atqui verear voluptua, mel erat cetero repudiare ei, mel cu augue principes. Exerci doming reprimique ne duo.
+            Noluisse abhorreant id eam, mei porro integre appetere an. Ius cu placerat erroribus salutatus.
+        </p>
+
+        <p class="item">
+            2---Lorem ipsum dolor sit amet, at ius affert causae utroque. Semper iuvaret cum te. Utamur prompta pro no,pro ut fabellas torquatos.
+            Te viderer invenire eum, duo definiebas disputationi ad. Ut pri admodum ponderum pertinax,
+            facer minimum legendos vim id. Aeque verear reprehendunt an eam. Eos ea alia oblique, cu cum erat option.
+            Has ut atqui verear voluptua, mel erat cetero repudiare ei, mel cu augue principes. Exerci doming reprimique ne duo.
+            Noluisse abhorreant id eam, mei porro integre appetere an. Ius cu placerat erroribus salutatus.
+        </p>
+
+        <p class="item">
+            3---Lorem ipsum dolor sit amet, at ius affert causae utroque. Semper iuvaret cum te. Utamur prompta pro no,pro ut fabellas torquatos.
+            Te viderer invenire eum, duo definiebas disputationi ad. Ut pri admodum ponderum pertinax,
+            facer minimum legendos vim id. Aeque verear reprehendunt an eam. Eos ea alia oblique, cu cum erat option.
+            Has ut atqui verear voluptua, mel erat cetero repudiare ei, mel cu augue principes. Exerci doming reprimique ne duo.
+            Noluisse abhorreant id eam, mei porro integre appetere an. Ius cu placerat erroribus salutatus.
+        </p>
+
+        <p class="item">
+            4---Lorem ipsum dolor sit amet, at ius affert causae utroque. Semper iuvaret cum te. Utamur prompta pro no,pro ut fabellas torquatos.
+            Te viderer invenire eum, duo definiebas disputationi ad. Ut pri admodum ponderum pertinax,
+            facer minimum legendos vim id. Aeque verear reprehendunt an eam. Eos ea alia oblique, cu cum erat option.
+            Has ut atqui verear voluptua, mel erat cetero repudiare ei, mel cu augue principes. Exerci doming reprimique ne duo.
+            Noluisse abhorreant id eam, mei porro integre appetere an. Ius cu placerat erroribus salutatus.
+        </p>
+
+        <a class="next" href="index.html">Load More</a>
+    </div>
+
+    <div class="footer">
+        <img src="img/facebook.png"/>
+        <img src="img/google-plus.png"/>
+        <img src="img/instagram.png"/>
+        <img src="img/loading-icon.gif"/>
+        <img src="img/pinterest.png"/>
+        <img src="img/rss.png"/>
+        <img src="img/skype.png"/>
+        <img src="img/twitter.png"/>
+        <img src="img/youtube.png"/>
+
+    </div>
+    <script >
+        $(".content").jmscroll({
+            autoTrigger: true,
+            maxPages: 5,
+            loadingHtml: '<img src="loading.gif" alt="Loading" />',
+            loadingSpeed: 800,
+            contentSelector: '.item, a.next',
+            nextSelector:'a.next:last',
+            footerSelector:'.footer',
+            footerPadding:0,
+            callback:false
+
+        });
+
+
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</body>
+</html>
