@@ -18,12 +18,31 @@
             });
         });
     </script>
+    <style>
+        body {
+            width:32px;
+            height: 32px;
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
 
     <p>点击隐藏或者显示</p>
     <button id="hide" value="隐藏">隐藏</button>
     <button id="show" value="显示">显示</button>
+
+
+    <script type="text/javascript" >
+        $(document).ready(function() {
+            $(".scroll_top_img").on("click",
+                function() {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    })
+                });
+        });
+    </script>
 
 </body>
 </html>
