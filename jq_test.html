@@ -20,12 +20,26 @@
             });
         });
 
+        console.warn('warn');
+        console.error('error');
+        console.info('info');
+        console.log('log');
+        console.timeEnd('timeEnd');
+        console.debug('debug');
+        console.log("%c This will be formatted with large","color:green; font-size:x-large");
+
+
     </script>
 
 </head>
 <body>
 
-<p>点我,将会消失</p>
+<p style="background-color: #b3d4fc">点我,将会消失</p>
+
+<ul id="b">
+    <li>列表1</li>
+    <li id="a">列表2</li>
+</ul>
 
 </body>
 </html>
